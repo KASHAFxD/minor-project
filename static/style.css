@@ -1,0 +1,964 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: #f4f4f4;
+  font-family: "Inter", sans-serif;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+#redDibba {
+  position: relative;
+  background-color: #e21d48;
+  height: 350px;
+  width: 100%;
+}
+
+
+
+
+/* animation wala code shuru */
+
+
+
+.wrapper{
+
+  /* z-index: -1; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.box div{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(226, 29, 72, 0.8);
+
+}
+
+.box div:nth-child(1){
+  top:12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(2){
+  top:70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top:17%;
+  left: 6%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(4){
+  top:20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(5){
+  top:67%;
+  left: 10%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(6){
+  top:88%;
+  left: 70%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(7){
+  top:60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+
+
+
+.box div:nth-child(8){
+  top:32%;
+  left: 25%;
+  animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(9){
+  top:90%;
+  left: 25%;
+  animation: animate 10s linear infinite;
+}
+
+
+
+.box div:nth-child(10){
+  top:20%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate{
+  0%{
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+  }
+  100%{
+      transform: scale(1.3) translateY(-90px) rotate(360deg);
+      opacity: 0;
+  }
+
+
+}
+
+
+/* animation khatam kardi  */
+
+#mainHeading {
+  color: white;
+  background-color: #e21d48;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 60px;
+  font-style: normal;
+  position: relative;
+  padding-left: 40px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+#content {
+  position: relative;
+  background-color: #e21d48;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+#p1 {
+  background-color: #e21d48;
+  color: white;
+}
+
+#b1 {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 40px;
+  background-color: white;
+  color: #e21d48;
+  border-radius: 7px;
+  height: 40px;
+  width: 130px;
+  border-style: none;
+}
+
+#userInfo {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 280px;
+  width: 540px;
+  margin-left: 650px;
+  border-radius: 15px;
+  margin-top: -280px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#b1:hover {
+  border: white 1px solid;
+  background-color: #e21d48;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+#testing {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 1500px;
+}
+
+#th {
+  margin-top: 70px;
+  background-color: white;
+  font-size: 40px;
+  margin-left: 220px;
+}
+
+#tp {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 19px;
+  margin-left: 220px;
+  color: rgb(131, 129, 129);
+  font-weight: 500;
+}
+
+#form {
+  background-color: white;
+}
+
+#age {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#agePlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+#age:focus {
+  /* background-color: #e21d48; */
+
+  border: red 2px solid;
+}
+
+#gender {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 620px;
+  margin-top: 8px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#genderPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 620px;
+  margin-top: -65px;
+  color: rgb(48, 48, 48);
+}
+
+#chestPain {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#CPPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+#restingBP {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 620px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#restingBPplaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 620px;
+  margin-top: -65px;
+  color: rgb(48, 48, 48);
+}
+
+#cholestrol {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#cholestrolPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+#fastingBS {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 620px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#fastingBSPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 620px;
+  margin-top: -65px;
+  color: rgb(48, 48, 48);
+}
+
+#restingECG {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#restingECGPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+#maxHR {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 620px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#maxHRPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 620px;
+  margin-top: -65px;
+  color: rgb(48, 48, 48);
+}
+
+#exerciseAngina {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#exerciseAnginaPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+#oldpeak {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 220px;
+  margin-top: 20px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#oldpeakPlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 220px;
+  margin-top: 10px;
+  color: rgb(48, 48, 48);
+}
+
+#stslope {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 35px;
+  margin-left: 620px;
+  margin-top: 10px;
+  border: rgb(209, 209, 209) 1px solid;
+  border-radius: 5px;
+}
+
+#stslopePlaceholder {
+  /* display: inline-block; */
+  background-color: white;
+  font-weight: 500;
+  margin-left: 620px;
+  margin-top: -65px;
+  color: rgb(48, 48, 48);
+}
+
+#submit {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 220px;
+  background-color: #e21d48;
+  width: 750px;
+  height: 40px;
+  border: #e21d48 1px solid;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+}
+
+#submit:hover {
+  border: #e21d48 1px solid;
+  background-color: #ffffff;
+  color: #e21d48;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#rr {
+  position: relative;
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 300px;
+}
+
+#rrh1 {
+  color: rgb(0, 0, 0);
+  /* background-color: #e21d48; */
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  position: relative;
+  /* padding-left: 110px; */
+  /* line-height: 60px; */
+  margin-top: 20px;
+  margin-left: 360px;
+}
+
+#rrp {
+  margin-top: 10px;
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 19px;
+  margin-left: -20px;
+  color: rgb(131, 129, 129);
+  font-weight: 500;
+}
+
+#risk {
+  width: 705px;
+  height: 130px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 270px;
+  border-radius: 15px;
+}
+
+#riskh1 {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  position: relative;
+  /* padding-left: 110px; */
+  /* line-height: 60px; */
+  margin-top: 29px;
+  margin-left: 100px;
+}
+
+#rrp1 {
+  background-color: white;
+  color: #7a7a7a;
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 350;
+  margin-top: 10px;
+}
+
+#rrp2 {
+  background-color: white;
+  color: #e21d48;
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: 600;
+  /* margin-top: 10px; */
+}
+
+#dil {
+  /* position: relative;
+    display: inline-block; */
+  margin-left: 230px;
+  font-size: 70px;
+}
+
+#keyInsights {
+  display: inline-block;
+  border-radius: 15px;
+  margin-top: 50px;
+  height: 250px;
+  width: 345px;
+  background-color: white;
+  position: relative;
+}
+
+/* 
+#keyInsights{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  position: relative;
+  padding-left: 110px; 
+   line-height: 60px;
+  margin-top: 69px;
+  margin-left: 100px;
+  border: white 1px solid;
+  border-radius: 15px;
+  
+
+}  */
+
+#kiH {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#riskFactor {
+  display: inline-block;
+  border-radius: 15px;
+  /* margin-top: 50px; */
+  height: 250px;
+  width: 345px;
+  background-color: white;
+  position: absolute;
+  margin-left: 15px;
+  /* margin-bottom: -59px; */
+  margin-top: 50px;
+  /* margin-top: -40px; */
+}
+
+#rfH {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* li::marker{
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    size: 5px;
+    border: #e21d48 2px solid;
+    list-style-type: disc;
+} */
+
+.key-insights {
+  position: relative;
+  display: inline-block;
+  padding-left: -10px;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0;
+  margin-top: 20;
+  width: 340px;
+}
+
+.key-insights li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  /* margin-left: 5px; */
+  /* padding-left: -10px; */
+  /* display: inline-flex; */
+}
+
+.key-insights li::before {
+  content: "o";
+  color: #e21d48;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.risk-factor {
+  position: relative;
+  display: inline-block;
+  padding-left: -10px;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0;
+  margin-top: 20;
+  width: 340px;
+  /* margin-right: 15px; */
+}
+
+.risk-factor li {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  /* margin-left: 5px; */
+  /* padding-left: 10px; */
+  /* display: inline-flex; */
+}
+
+.risk-factor li::before {
+  content: "o";
+  color: #e21d48;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+
+
+
+#question{
+  margin-top: 120px;
+  background-color: white;
+  font-size: 40px;
+  margin-left: 225px;
+  font-weight: 800;
+}
+
+
+#values{
+  font-size: 20px;
+  line-height: 50px;
+  background-color: white;
+}
+
+
+.valitems{
+  font-size: 17px;
+  font-weight: 400;
+  background-color: white;
+  color: #7a7a7a;
+}
+
+li::marker{
+  color: #e21d48;
+  font-size: 25px;
+}
+
+li:hover{
+  color: #e21d48;
+  cursor: pointer;
+}
+
+#credits{
+    display: inline-block;
+    padding-bottom: 30px;
+  }
+
+
+#kashaf{
+  display: inline-block;
+  color: #e21d48;
+}
+
+#kashaf:hover{
+  cursor: pointer;
+}
+
+
+/* ab sahan se responsive website ka kaam chalau  */
+@media only screen  and (max-width :600px ){
+
+/* body {
+  width: 360px;
+  max-width: 100%;
+} */
+
+#redDibba{
+  height: 250px;
+}
+
+
+
+#mainHeading{
+  font-size: 40px;
+  line-height: 45px;
+}
+
+#p1{
+  font-size: 12px;
+}
+
+#b1{
+  margin-top: 10px;
+   width: 30%;
+   height: 40px;
+}
+
+
+#th{
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#tp{
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+#form{
+  width: 100%;
+  margin:0%;
+  padding: 0%;
+}
+
+
+#agePlaceholder{
+  margin-left: 27px;
+  font-size: 13px;
+}
+
+#age{
+  margin-left: 27px;
+  width: 40%;
+}
+
+
+#genderPlaceholder{
+  margin-left: 270px;
+font-size: 13px;
+}
+
+
+
+#gender{
+  margin-left: 190px;
+  width: 40%;
+  margin-top: 12px;
+  height: 37px;
+
+}
+
+
+#CPPlaceholder{
+  margin-left: 27px;
+  font-size: 13px;
+}
+
+#chestPain{
+  margin-left: 27px;
+  width: 40%;
+}
+
+
+#restingBPplaceholder{
+  margin-left: 190px;
+font-size: 13px;
+padding-top: 3px;
+}
+
+
+
+#restingBP{
+
+  margin-left: 190px;
+  width: 40%;
+ height: 33px;
+
+
+}
+
+#cholestrolPlaceholder{
+  margin-left: 27px;
+  font-size: 13px;
+}
+
+
+#cholestrol{
+  margin-left: 27px;
+  width: 40%;
+
+
+
+}
+
+#fastingBSPlaceholder{
+  margin-left: 205px;
+font-size: 13px;
+padding-top: 3px;
+}
+
+#fastingBS{
+  margin-left: 190px;
+  width: 40%;
+  height: 35px;
+}
+
+#restingECGPlaceholder{
+  margin-left: 27px;
+  font-size: 13px;
+}
+
+#restingECG{
+  margin-left: 27px;
+  width: 40%;
+}
+
+#maxHRPlaceholder{
+  margin-left: 198px;
+  font-size: 13px;
+  padding-top: 4px;
+
+}
+
+#maxHR{
+  margin-left: 190px;
+  width: 40%;
+  height: 31px;
+}
+
+#oldpeakPlaceholder{
+  margin-left: 27px;
+  font-size: 13px;
+  padding-top: 8px;
+}
+
+
+#userInfo{
+  background-color: black;
+  margin-left: 0px;
+  width: 0px;
+  height: 0px;
+
+}
+
+#oldpeak{
+  margin-top: 8px;
+  margin-left: 27px;
+  width: 40%;
+}
+
+
+#stslopePlaceholder{
+  margin-left: 270px;
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+#stslope{
+  margin-left: 190px;
+  width: 40%;
+  height: 31px;
+}
+
+
+#submit{
+  width: 50%;
+  margin-left: 23%;
+}
+
+#question{
+  margin-left: 6px;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.valitems{
+  border: #7a7a7a 0.5px dashed;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* margin: 0%; */
+  margin-left: -10px;
+  /* padding-right: 10px; */
+  line-height: 2;
+
+}
+
+
+#testing{
+  height: 1550px;
+
+}
+
+
+
+/* responsiveness wala code khatam  */
+}

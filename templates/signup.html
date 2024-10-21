@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="redDibba">
+
+            <p id="head">Heart Disease Prediction</p>
+           <br>
+            <p id="subhead">Your Heath, Our Priority.</p> <button id="know" onclick="openForm()">Know More</button>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+            <p id="content">Heart disease is one of the leading causes of death globally, making early detection crucial for effective management. Our Heart Disease Prediction tool utilizes advanced machine learning techniques to assess your health data and provide insights into your risk of heart disease. Understanding your risk can empower you to make informed decisions about your health.</p>
+
+<div id="types">
+    <div id="ml" onclick="opensignup()">
+    <i id="pen" class="fa-solid fa-file-pen fa-2xl" style="color: #e21d48;"></i>
+    
+    <br>
+    <br><br>
+    <p id="textdiagnose" align="center">Diagnose Using Textual Data</p></div>
+    <h2 align="center" style="display: inline-block; margin-left: 80px;">OR</h2>
+    <div id="dl" onclick="opensignup()"><i id="imgdiagnose" class="fa-regular fa-image fa-2xl" style="color: #e21d48;"></i>
+    <br>
+  <br><br>
+<p id="imd" align="center">Diagnose Using Image <br> (coming soon) </p></div>
+</div>
+
+  
+
+<!-- know more wala popup ka code -->
+
+<div id="popup" style="color: rgb(48, 48, 48);  top: 0;
+margin-left: 15%;
+margin-top: 20px;
+background-color: rgb(212, 212, 212);
+display: none;
+position: fixed;
+width: 70%;
+height: 48%;
+border: 2px solid #000000;
+border-radius: 10px;">
+ 
+<h1 style="margin-left: 40px; margin-top: 10px;">What I am ?</h1>
+
+<p style="margin: 20px;">Hello! I am a heart disease prediction website that is designed for 
+  the people who wants to know that is their heart is at any risk of being unhealthy, 
+  I can predict your heart health on the basis of that insights you provide to me so 
+  that if any chances of your heart being at risk can get proper treatment on time.</p>
+
+<h1 style="margin-left: 40px; margin-top: 10px;">How can I help ?</h1>
+<p style="margin: 15px;">With your consent, I can save your contact details and if in 
+  any case, your heart found defected, I can suggest you with some of the best 
+  cardiologist in your area, I can remind you of going for checkup on regular basis.</p>
+<button style="margin-left: 90%; font-size: 20px;" onclick="closeForm()">Close</button>
+
+</div>
+
+
+<h1 id="benefits">Benefits Of Using Me </h1>
+
+<br><br>
+<ul id="list" type="bullets">
+  <li id="items">Accurate Results, upto 90%</li>
+  <li id="items">With your consent, reminders for medication</li>
+  <li id="items">Best suggestions for cardiologist</li>
+  <li id="items">Regular Remainders for visiting a doctor</li>
+  <li id="items">Save a copy of your report if needed</li>
+</ul>
+
+
+<!-- animation start karunga  -->
+
+<!-- <div class="wrapper">
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</div> -->
+
+
+
+
+
+
+<div id="lf">
+  <br>
+    <h1 style="color: white; text-align: center;">Lets Get Started</h1>
+    <br>
+<p style="color: white; text-align: center;">Signup now to avail all perks!!!</p>
+<button id="signupbtn" onclick="opensignup()">Signup Now</button>
+<br><br>
+<p  style="color: white; text-align: center;">Already a member ?</p>
+<button id="loginbtn" onclick="openlogin()">Login</button>
+
+
+</div>
+
+
+Crafted with ❤️ by <strong id="footer">Kashaf</strong>
+
+<!-- signup page chalu hua hai -->
+
+<div id="signuppg">
+<button style="margin-left: 92%; margin-top: 10px; height: 30px; width: 30px; border-radius: 50%; border: 2px solid black;" onclick="closesignup()">X</button>
+<h1 style="text-align: center; margin-top: 19px;">Signup</h1>
+<form action="/register" method="post" id="form">
+  <label for="username" id="usrpl">Username</label>
+  <br>
+  <input type="text" name="name" id="username" required>
+<br><br>
+
+  <label for="number" id="numpl">Mobile</label>
+  <br>
+  <input type="number" name="number" id="number" required>
+
+  <br><br>
+  <label for="email" id="passwordpl">Email ID</label>
+  <br>
+  <input type="email" name="email" id="password" required>
+
+
+<br><br>
+  <label for="password" id="passwordpl">Password</label>
+  <br>
+  <input type="password" name="password" id="password" required>
+
+
+
+
+<br><br>
+  <input type="checkbox" name="remember" id="remember"> Remember Me
+  <br><br>
+
+  <button type="submit" id="submit" class="batan">Signup Now</button>
+  <br>
+  <p style="margin-left: 40%; margin-top: 5px;">OR</p>
+
+<button id="login" class="batan" onclick="openlogin(); closesignup()">Login Here</button>
+
+</form>
+</div>
+
+<!-- signup page khatam kaardiya 
+  -->
+
+
+ <!-- login page chalu kardunga   -->
+
+
+
+
+
+ <div id="loginpg">
+  <button style="margin-left: 92%; margin-top: 10px; height: 30px; width: 30px; border-radius: 50%; border: 2px solid black;" onclick="closelogin()">X</button>
+  <h1 style="text-align: center; margin-top: 19px;">Login</h1>
+  <form action="/login" method="post" id="forml">
+    <label for="email" id="usrpl">Email ID</label>
+    <br>
+    <input type="email" name="email" id="usernamel" required>
+  <br><br>
+  
+  
+  
+ <br>
+    <label for="password" id="passwordpl">Password</label>
+    <br>
+    <input type="password" name="password" id="passwordl" required>
+  
+  
+  
+  
+
+  
+  
+  <br><br>
+    <input type="checkbox" name="remember" id="rememberl"> Remember Me
+    <br><br>
+  
+    <button type="submit" id="submitl" class="batan">Login</button>
+    <br><br>
+    <p style="margin-left: 40%; margin-top: 5px;">OR</p>
+  <br>
+  <button id="login" class="batan" onclick="closelogin(), opensignup()">Signup Now</button>
+  
+  </form>
+  </div>
+
+
+
+
+<!-- login page khatam ho gaya  -->
+
+
+
+
+
+<!-- scripts start -->
+<script
+    src="https://kit.fontawesome.com/3844bbb781.js"
+    crossorigin="anonymous"
+  >
+
+
+// javascript start
+
+
+
+
+
+
+
+</script>  
+<script src="signup.js"></script>
+<script src="{{url_for('static', filename='signup.js')}}"></script>
+
+</body>
+</html>

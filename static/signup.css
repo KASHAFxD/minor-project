@@ -1,0 +1,595 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#redDibba{
+    width: 100%;
+    height: 140px;
+    background-color: #e21d48;
+    padding-bottom: 20px;
+
+}
+
+
+
+#head{
+    display: inline-block;
+    margin-top: 40px;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: 700;
+
+}
+
+#subhead{
+    display: inline-block;
+    color: white;
+    margin-left: 30px;
+    font-weight: 400;
+
+}
+
+#subhead:hover{
+    border-bottom: white 1px solid;
+    cursor: pointer;
+}
+
+#content{
+    display: inline-block;
+    /* color: white; */
+     font-size: 17px;
+    margin-top: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+
+
+#know{
+    width: 9%;
+    height: 40px;
+    /* background-color: black; */
+    /* margin-top: -100px; */
+    /* position:sticky; */
+    display: inline-block;
+    margin-left: 90%;
+margin-top: -280px;
+   background-color: white;
+   border: #e21d48 1px solid;
+   color: #e21d48;
+   border-radius: 10px;
+
+}
+
+#know:hover{
+    cursor: pointer;
+color: white;
+background-color: #e21d48;
+border: white 1px solid;
+}
+
+#content{
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+}
+
+
+#types{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    height: 300px;
+    /* background-color: rgba(167, 165, 165, 0.17); */
+    border-radius: 20px;
+}
+
+
+
+#ml{
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    margin-left: 14%;
+    border: 2px solid #e21d48;
+    width: 250px;
+    height: 200px;margin-top: 5%;
+    border-radius: 10px;
+
+
+}
+
+#pen{
+    display: inline-block;
+    margin-left: 37%;
+    margin-top: 23%;
+    font-size: 70px;
+}
+
+#dl{
+    /* position: ; */
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    margin-left: 7%;
+    border: 2px solid #e21d48;
+    width: 250px;
+    height: 200px;
+margin-top: 4%;
+border-radius: 10px;
+}
+
+
+#imgdiagnose{
+    display: inline-block;
+    margin-left: 37%;
+    margin-top: 23%;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+/* popup css */
+
+
+/* #popup{
+    top: 0;
+    margin-left: 15%;
+    margin-top: 20px;
+    background-color: rgb(212, 212, 212);
+    display: block;
+    position: fixed;
+    width: 70%;
+    height: 48%;
+    border: 2px solid #000000;
+border-radius: 10px;
+} */
+
+
+#ml:hover{
+    cursor: pointer;
+}
+
+#dl:hover{
+    cursor: pointer;
+}
+
+#benefits{
+    /* margin-top: 50px; */
+    text-align: center;
+}
+
+
+
+
+/* 
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #f00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.or {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+} */
+
+
+
+#list{
+    line-height: 35px;
+    font-size: 20px;
+    margin-left: 40%;
+    /* list-style-type: circle; */
+    /* color: red; */
+    
+}
+
+#items::marker{
+    color: #e21d48;
+    font-size: 30px;
+
+}
+
+#items:hover{
+color: #e21d48;
+cursor: pointer;
+/* text-decoration: underline; */
+    
+}
+
+
+
+
+
+
+
+
+/* animation shuru karudi  */
+
+
+
+
+.wrapper{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(226, 29, 72, 0.8);
+
+}
+
+.box div:nth-child(1){
+    top:12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(2){
+    top:70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top:17%;
+    left: 6%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(4){
+    top:20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(5){
+    top:67%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(6){
+    top:88%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(7){
+    top:60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+}
+
+
+
+.box div:nth-child(8){
+    top:32%;
+    left: 25%;
+    animation: animate 10s linear infinite;
+}
+
+
+.box div:nth-child(9){
+    top:90%;
+    left: 25%;
+    animation: animate 10s linear infinite;
+}
+
+
+
+.box div:nth-child(10){
+    top:20%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+
+
+}
+
+
+
+
+/* animation khatam kardi */
+
+
+#lf{
+    width: 100%;
+    height: 300px;
+background-color: #e21d48;
+margin-top: 50px;
+}
+
+
+#signupbtn{
+    width: 20%;
+    height: 36px;
+    margin-left: 40%;
+    margin-top: 20px;
+
+background-color: white;
+color: #e21d48;
+border-radius: 5px;
+border: 1px solid white;
+}
+
+#signupbtn:hover{
+    cursor: pointer;
+    background-color: #e21d48;
+    color: white;
+}
+
+
+
+#loginbtn{
+    width: 20%;
+    height: 36px;
+    margin-left: 40%;
+    margin-top: 20px;
+
+background-color: white;
+color: #e21d48;
+border-radius: 5px;
+border: 1px solid white;
+}
+
+
+#loginbtn:hover{
+    cursor: pointer;
+    background-color: #e21d48;
+    color: white;
+}
+
+#footer{
+    color: #e21d48;
+}
+
+
+#signuppg{
+    margin-top: 10px;
+    margin-left: 35%;
+    border-radius: 10px;
+    top: 0;
+    width: 35%;
+    height: 620px;
+    display: none;
+    position: fixed;
+    background-color: rgb(206, 204, 204);
+    box-shadow: 20px 20px 50px black;
+    border: 1px solid black;
+   transition: top 0ms ease-in-out 200ms,
+   opacity 200ms ease-in-out 0ms,
+   transform 20ms ease-in-out 0ms;
+}
+
+
+
+
+
+#form{
+    margin-top: -15px;
+    margin-left: 30px;
+}
+
+
+
+#username{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+#number{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+#password{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+label{
+    font-weight: 550;
+}
+
+#submit{
+    width: 50%;
+    height: 35px;
+    background-color: #da5975;
+    color: white;
+    margin-left: 20%;
+    border: 1px solid #e21d48;
+    border-radius: 5px;
+}
+
+
+
+
+#login{
+    width: 50%;
+    height: 35px;
+    background-color: #da5975;
+    color: white;
+    margin-left: 20%;
+    border: 1px solid #e21d48;
+    border-radius: 5px;
+}
+
+
+
+#submit:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+
+}
+
+#login:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+
+}
+
+
+
+
+
+#loginpg{
+    margin-top: 40px;
+    margin-left: 35%;
+    border-radius: 10px;
+    top: 0;
+    width: 35%;
+    height: 520px;
+    display: none;
+    position: fixed;
+    background-color: rgb(206, 204, 204);
+    box-shadow: 20px 20px 50px black;
+    border: 1px solid black;
+}
+
+
+#forml{
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+
+
+#usernamel{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+#numberl{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+#passwordl{
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid #e21d48; */
+}
+
+
+labell{
+    font-weight: 550;
+}
+
+#submitl{
+    width: 50%;
+    height: 35px;
+    background-color: #da5975;
+    color: white;
+    margin-left: 20%;
+    border: 1px solid #e21d48;
+    border-radius: 5px;
+}
+
+
+
+
+#loginl{
+    width: 50%;
+    height: 35px;
+    background-color: #da5975;
+    color: white;
+    margin-left: 20%;
+    border: 1px solid #e21d48;
+    border-radius: 5px;
+}
+
+
+
+#submitl:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+
+}
+
+#loginl:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+
+}

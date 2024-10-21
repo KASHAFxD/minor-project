@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    
+    <div id="redDibba">
+      <div id="mainHeading">
+        Diagnose Heart<br />
+        Disease With AI
+      </div>
+      <div id="content">
+        <p id="p1">
+          Our machine learning model can help you<br />
+          identify the risk of heart disease based on your<br />
+          medical information. Get personalized insights <br />and take control
+          of your heart health.
+        </p>
+      </div>
+      <button id="b1" onclick="location.href='/logout'">Logout</button>
+      <div id="userInfo"><p style="background-color: transparent; margin-left: 50px; padding-top: 30px;"><b style="background-color: transparent;">Name: </b> {{user.name }}</p>
+        <p style="background-color: transparent; margin-left: 50px; padding-top: 30px;"><b style="background-color: transparent;">Email: </b> {{user.email }}</p>
+        <p style="background-color: transparent; margin-left: 50px; padding-top: 30px;"><b style="background-color: transparent;">number: </b> {{user.number }}</p>
+        </div>
+      
+    </div>
+
+    <!-- laal wala dibbe ka role khatm -->
+
+
+
+
+
+
+    <!-- ab baki ka start  -->
+
+    <div id="testing">
+      <br /><br />
+      
+      <h1 id="th">Assess Your Heart Health</h1>
+      <p id="tp">
+        Fill out the form below to get a personalized assessment of your heart
+        disease <br />
+        risk.
+      </p>
+      <form action="/test" method="POST" id="form">
+        <p id="agePlaceholder">Age</p>
+        <input type="number" name="age" id="age" min="0" max="120" required />
+
+        <p id="genderPlaceholder">Gender</p>
+        <select name="gender" id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <p id="CPPlaceholder">Chest Pain Type</p>
+        <select id="chestPain" name="chestPain" required>
+          <option value="typicalAngina">Typical Angina (TA)</option>
+          <option value="nonAnginalPain">Non-Anginal Pain (NAP)</option>
+          <option value="asymptomatic">Asymptomatic (ASY)</option>
+        </select>
+
+        <p id="restingBPplaceholder">Resting Blood Pressure</p>
+        <input
+          type="number"
+          name="restingBP"
+          id="restingBP"
+          min="0"
+          max="300"
+          required
+        />
+
+        <p id="cholestrolPlaceholder">Cholesterol</p>
+        <input
+          type="number"
+          name="cholesterol"
+          id="cholestrol"
+          min="0"
+          max="600"
+          required
+        />
+
+        <p id="fastingBSPlaceholder">Fasting Blood Sugar</p>
+        <select name="fastingBS" id="fastingBS" required>
+          <option value="<=120mg/dL">&leq; 120 mg/dL</option>
+          <option value=">120mg/dL">&gt; 120 mg/dL</option>
+        </select>
+
+        <p id="restingECGPlaceholder">resting ECG</p>
+        <select id="restingECG" name="restingECG" required>
+          <option value="normal">Normal</option>
+          <option value="st">ST-T Wave Abnormality (ST)</option>
+          <option value="lvh">Left Ventricular Hypertrophy (LVH)</option>
+        </select>
+
+        <br />
+        <p id="maxHRPlaceholder">Maximum Heart Rate</p>
+        <input
+          type="number"
+          name="maxHR"
+          id="maxHR"
+          min="0"
+          max="250"
+          required
+        />
+        <br />
+
+        <p id="oldpeakPlaceholder">Old Peak Value</p>
+        <input
+          type="number"
+          name="oldpeak"
+          id="oldpeak"
+          step="0.1"
+          min="0"
+          max="10"
+          required
+        />
+
+        <p id="stslopePlaceholder">ST slope</p>
+        <select id="stslope" name="stslope" required>
+          <option value="up">Up</option>
+          <option value="flat">Flat</option>
+          <option value="down">Down</option>
+        </select>
+        ̥<br />̥
+        <button type="submit" id="submit">Access Your Risk</button>
+        
+      </form>
+      
+      <div id="question">Where Did These Values Came From ? <br><br>
+
+        <ul id="values">
+          <li class="valitems">Age =  (your birth year - current year)</li>
+          <li class="valitems">Gender = Male (if X & Y chromosome) / Female (if X & X chromosome)</li>
+          <li class="valitems">Chest Pain = Aypical Angina(predictable) / Atypical Angina (unpredictable) / Non-Anginal (chest pain not related to heart)</li>
+          <li class="valitems">Resting Blood pressure = Blood pressure while resting</li>
+          <li class="valitems">Cholestrol = Serum cholestrol level (in mg/dl)</li>
+          <li class="valitems">Fasting Blood Sugar = blood test after atleast 8h of fasting</li>
+          <li class="valitems">Resting ECG = Normal / ST-TAbnormality (abnormality in ST segment) / Left Ventricular (Enlargement of Left Ventricle)</li>
+          <li class="valitems">Maximum Heart Rate = Number of Time Your Heart Beats in a Minute</li>
+          <li class="valitems">Old Peak = Difference in ST segment Depression Relative to Rest</li>
+          <li class="valitems">ST Slope = Slope of ST Segment During Exercise</li>
+        </ul>
+      </div>
+      
+    </div>
+    <br /><br /><br />
+    <!-- <div id="rr">
+      <p id="rrh1">Your Heart Health Insights</p>
+      <p id="rrp" align="center">
+        Based on the information you provided, here's an analysis of your heart
+        disease <br />
+        risk.
+      </p>
+      <div id="risk">
+        <h1 id="riskh1">Risk Level</h1>
+        <br />
+        <p id="rrp1">Your risk of heart disease is</p>
+        <p id="rrp2">
+          Moderate
+          <i
+            id="dil"
+            class="fa-regular fa-heart fa-beat-fade fa-2xl"
+            style="color: #e21d48"
+          ></i>
+        </p>
+        <div id="keyInsights">
+          <h1 id="kiH">Key Insights</h1>
+          <ul class="key-insights">
+            <li>&nbsp; Your Cholestrol Level is slightly Elevated</li>
+            <li>Your heart rate is normal</li>
+            <li>Gulucose level is maintained</li>
+          </ul>
+        </div>
+        <div id="riskFactor">
+          <h1 id="rfH">Risk Factors</h1>
+          <ul class="risk-factor">
+            <li>
+              &nbsp; Heart Rate - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; 98
+            </li>
+            <li>
+              &nbsp; Gender - &nbsp;& &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Male
+            </li>
+            <li>
+              &nbsp; Cholestrol - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; 350
+            </li>
+            <li>
+              &nbsp; Blood Pressure - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; 480
+            </li>
+            <li>
+              &nbsp; Blood Sugar - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; 300
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <p id="credits">Created With ❤️ By </p><p id="kashaf">&nbsp; Kashaf</p>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/3844bbb781.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="index.js"></script> -->
+</html>
